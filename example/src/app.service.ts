@@ -1,4 +1,4 @@
-import { InjectRedis } from "nestjs-redis";
+import { InjectRedis } from "@hoangnguyen1247/nestjs-redis";
 
 export class AppService {
     constructor(
