@@ -3,6 +3,10 @@
     "version": "0.0.1",
     "description": "",
     "main": "lib/index.js",
+    "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
     "scripts": {
         "prepare": "husky install",
         "prebuild": "rimraf lib",
