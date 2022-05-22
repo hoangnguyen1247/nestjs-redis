@@ -1,6 +1,6 @@
 <p align="center">
   <h3 align="center">
-    nestjs-redis
+    @hoangnguyen1247/nestjs-redis
   </h3>
 
   <p align="center">
@@ -22,7 +22,7 @@
 
 ## About
 
-`nestjs-redis` implements a module, `RedisModule`, which when imported into
+`@hoangnguyen1247/nestjs-redis` implements a module, `RedisModule`, which when imported into
 your nestjs project provides a Redis client to any class that injects it. This
 lets Redis be worked into your dependency injection workflow without having to
 do any extra work outside of the initial setup.
@@ -30,16 +30,16 @@ do any extra work outside of the initial setup.
 ## Installation
 
 ```bash
-npm install --save redis nestjs-redis
+npm install --save redis @hoangnguyen1247/nestjs-redis
 ```
 
 ## Getting Started
 
-The simplest way to use `nestjs-redis` is to use `RedisModule.forRoot`
+The simplest way to use `@hoangnguyen1247/nestjs-redis` is to use `RedisModule.forRoot`
 
 ```typescript
 import { Module } from '@nestjs-common';
-import { RedisModule } from 'nestjs-redis';
+import { RedisModule } from '@hoangnguyen1247/nestjs-redis';
 
 @Module({
   imports: [
@@ -56,7 +56,7 @@ custom decorator
 
 ```typescript
 import { Injectable } from '@nestjs/common';
-import { InjectRedis } from 'nestjs-redis';
+import { InjectRedis } from '@hoangnguyen1247/nestjs-redis';
 
 @Injectable()
 export class AppService {
@@ -68,7 +68,7 @@ Asynchronous setup is also supported
 
 ```typescript
 import { Module } from '@nestjs-common';
-import { RedisModule } from 'nestjs-redis';
+import { RedisModule } from '@hoangnguyen1247/nestjs-redis';
 
 @Module({
   imports: [
